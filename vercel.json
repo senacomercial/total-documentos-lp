@@ -1,8 +1,6 @@
 {
   "buildCommand": "",
-  "devCommand": "npm install && next dev",
   "installCommand": "npm install",
-  "framework": "static",
   "public": true,
   "env": {
     "NEXT_PUBLIC_ANALYTICS_ID": "@NEXT_PUBLIC_ANALYTICS_ID",
