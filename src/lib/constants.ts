@@ -8,9 +8,8 @@ import type {
 
 // Contact Info
 export const CONTACT_INFO = {
-  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '+5511999999999',
-  phone: process.env.NEXT_PUBLIC_PHONE_NUMBER || '+5511999999999',
-  email: process.env.NEXT_PUBLIC_EMAIL || 'contato@totaldocumentos.com.br',
+  whatsapp: '55 19 97120-6971',
+  phone: '55 19 97120-6971',
 }
 
 // Hero Section
@@ -287,5 +286,4 @@ export const FINAL_CTA = {
   subtitle: 'Agendar sua consultoria gratuita é o primeiro passo.',
   primaryCTA: 'Fale no WhatsApp',
   secondaryCTA: 'Ligue Agora',
-  tertiaryCTA: 'Envie Email',
 }

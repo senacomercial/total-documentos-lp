@@ -23,7 +23,8 @@ export interface GA4Event {
 
 interface WindowWithGA extends Window {
   gtag?: (command: string, ...args: unknown[]) => void
-  dataLayer?: Record<string, unknown>[]
+  fbq?: any
+  dataLayer?: any[]
 }
 
 export const trackEvent = (
@@ -120,8 +121,11 @@ export const initializeMetaPixel = () => {
   const w = window as WindowWithGA & { fbq?: Function }
   if (!w.fbq) {
     const fbq = function (...args: unknown[]) {
-      const queue = (w.fbq?.queue = w.fbq?.queue || [])
-      queue.push(args)
+      const w = window as WindowWithGA & { fbq?: { queue: unknown[] } }
+      if (w.fbq) {
+        const queue = (w.fbq.queue = w.fbq.queue || [])
+        queue.push(args)
+      }
     }
     w.fbq = fbq
 

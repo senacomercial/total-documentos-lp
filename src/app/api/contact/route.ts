@@ -18,26 +18,10 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // TODO: Save to Supabase
-    // const { data, error } = await supabase
-    //   .from('contacts')
-    //   .insert([validation])
-    // if (error) throw error
-
+    // TODO: Save to Supabase (phone/name)
     // TODO: Send Zapier webhook notification
-    // const webhookUrl = process.env.ZAPIER_WEBHOOK_URL
-    // if (webhookUrl) {
-    //   await fetch(webhookUrl, {
-    //     method: 'POST',
-    //     headers: { 'Content-Type': 'application/json' },
-    //     body: JSON.stringify({
-    //       ...validation,
-    //       timestamp: new Date().toISOString(),
-    //     }),
-    //   })
-    // }
 
-    console.log('Contact form submission:', validation)
+    console.log('Contact form submission (no email):', validation)
 
     return NextResponse.json(
       {

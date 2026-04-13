@@ -11,10 +11,7 @@ const Hero: React.FC = () => {
     trackContainerImpression('hero')
   }, [])
 
-  const whatsappUrl = generateWhatsAppLink(
-    CONTACT_INFO.whatsapp.replace(/\D/g, ''),
-    'Olá! Gostaria de agendar uma consultoria gratuita sobre proteção de marca.'
-  )
+  const whatsappUrl = 'https://api.whatsapp.com/send/?phone=5519971206971&text&type=phone_number&app_absent=0'
 
   const handleCTAClick = () => {
     trackCTAClick('whatsapp')

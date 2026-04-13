@@ -72,58 +72,12 @@ const Quiz: React.FC = () => {
               </div>
             </div>
 
-            <div className="mb-8">
-              <h4 className="font-bold text-gray-900 mb-4">
-                Receba Seu Plano de Ação Personalizado:
-              </h4>
-              <Form
-                fields={[
-                  {
-                    name: 'email',
-                    label: 'Seu Email',
-                    type: 'email',
-                    required: true,
-                    placeholder: 'seu@email.com',
-                  },
-                ]}
-                onSubmit={async (data) => {
-                  try {
-                    const response = await fetch('/api/quiz-results', {
-                      method: 'POST',
-                      headers: { 'Content-Type': 'application/json' },
-                      body: JSON.stringify({
-                        email: data.email,
-                        riskLevel,
-                      }),
-                    })
-
-                    if (response.ok) {
-                      trackFormSubmission('quiz')
-                      trackEvent('quiz_email_capture')
-                      return {
-                        success: true,
-                        message:
-                          'Obrigado! Verifique seu email para seu plano personalizado.',
-                      }
-                    }
-                    return {
-                      success: false,
-                      message: 'Erro ao enviar. Tente novamente.',
-                    }
-                  } catch (error) {
-                    return {
-                      success: false,
-                      message: 'Erro ao enviar. Tente novamente.',
-                    }
-                  }
-                }}
-                buttonText="Receber Plano"
-              />
-            </div>
-
             <div className="text-center pt-8 border-t border-gray-300">
-              <p className="text-gray-600 mb-4">
-                Quer conversar diretamente com Vinicius?
+              <p className="text-lg font-bold text-gray-900 mb-6">
+                Quer receber um plano de ação detalhado?
+              </p>
+              <p className="text-gray-600 mb-8">
+                Clique no botão abaixo para conversar diretamente com Vinicius no WhatsApp e iniciar sua blindagem hoje mesmo.
               </p>
               <Button
                 href={`https://wa.me/${CONTACT_INFO.whatsapp.replace(/\D/g, '')}`}

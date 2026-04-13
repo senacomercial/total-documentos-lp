@@ -27,3 +27,7 @@ Thumbs.db
 
 # Vercel
 .vercel
+
+# Local Tools
+create_repo.py
+create_repo_v2.py

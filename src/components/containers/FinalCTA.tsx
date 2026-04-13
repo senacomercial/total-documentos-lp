@@ -22,7 +22,7 @@ const FinalCTA: React.FC = () => {
             {FINAL_CTA.subtitle}
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
             <Button
               href={`https://wa.me/${CONTACT_INFO.whatsapp.replace(/\D/g, '')}`}
               target="_blank"
@@ -36,23 +36,13 @@ const FinalCTA: React.FC = () => {
             </Button>
 
             <Button
-              href={`tel:${CONTACT_INFO.phone}`}
+              href={`tel:${CONTACT_INFO.phone.replace(/\D/g, '')}`}
               variant="secondary"
               size="lg"
               className="border-white text-white hover:bg-white hover:text-primary"
               onClick={() => trackCTAClick('phone')}
             >
               {FINAL_CTA.secondaryCTA}
-            </Button>
-
-            <Button
-              href={`mailto:${CONTACT_INFO.email}`}
-              variant="secondary"
-              size="lg"
-              className="border-white text-white hover:bg-white hover:text-primary"
-              onClick={() => trackCTAClick('email')}
-            >
-              {FINAL_CTA.tertiaryCTA}
             </Button>
           </div>
 
