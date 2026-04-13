@@ -1,8 +1,9 @@
 {
-  "buildCommand": "next build",
-  "devCommand": "next dev",
+  "buildCommand": "",
+  "devCommand": "npm install && next dev",
   "installCommand": "npm install",
-  "framework": "nextjs",
+  "framework": "static",
+  "public": true,
   "env": {
     "NEXT_PUBLIC_ANALYTICS_ID": "@NEXT_PUBLIC_ANALYTICS_ID",
     "NEXT_PUBLIC_META_PIXEL_ID": "@NEXT_PUBLIC_META_PIXEL_ID",
