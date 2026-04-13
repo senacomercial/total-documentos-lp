@@ -1,14 +1,44 @@
-# Total Documentos Landing Page
+# Total Documentos Landing Page - PRONTO PARA DEPLOY ✅
 
-**Landing Page for B2B Consultoria - Brand & Patent Protection Services**
+**Landing Page HTML Estática - Consultoria PI (Marca + Patente + Design)**
 
-By **Vinicius Tronconi**, Total Documentos Campinas
+## 🚀 Deploy Rápido (< 1 minuto)
+
+### Via Vercel Dashboard (Recomendado)
+
+1. **Criar conta Vercel:** https://vercel.com/sign-up
+2. **Push para GitHub:**
+   ```bash
+   git remote add origin https://github.com/SEU_USER/total-documentos-lp.git
+   git push -u origin main
+   ```
+3. **Import em Vercel:** https://vercel.com/new → Selecione repo → Deploy
+4. **URL Live:** `https://total-documentos-lp.vercel.app`
+
+## 📋 Conteúdo da Landing Page
+
+- ✅ **Hero** - Headline + CTA WhatsApp + Trust statement
+- ✅ **Personas** - 3 cases (e-commerce, franqueador, profissional)
+- ✅ **Solução** - 5-step journey visual
+- ✅ **Diferencial** - 6 benefit cards
+- ✅ **Social Proof** - 350+ marcas, 95% aprovação, testimonials
+- ✅ **FAQ** - 8 Q&As responsivos
+- ✅ **Final CTA** - 3 rotas (WhatsApp, Phone, Email)
+
+Arquivo principal: `public/index.html` (282 linhas, totalmente responsivo)
+
+## ⚙️ Customizar
+
+Edite `public/index.html`:
+- **WhatsApp:** `https://wa.me/55XXXXXXXXXX` (sua linha 191)
+- **Telefone:** `tel:+55XXXXXXXXXX` (sua linha 352)
+- **Email:** `vinicius@totaldocumentos.com` (sua linha 353)
+
+## 📊 Project Info
+
+**By:** Vinicius Tronconi, Total Documentos Campinas
 
 ---
-
-## 📋 Project Overview
-
-A conversion-focused landing page for trademark registration (INPI) and intellectual property consulting. Built with Next.js 14, React 18, TypeScript, Tailwind CSS.
 
 **KPI Targets:**
 - 2.5-3.5% conversion rate
