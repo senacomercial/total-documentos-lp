@@ -1,6 +1,7 @@
 {
   "buildCommand": "",
   "installCommand": "npm install",
+  "framework": "nextjs",
   "public": true,
   "env": {
     "NEXT_PUBLIC_ANALYTICS_ID": "@NEXT_PUBLIC_ANALYTICS_ID",
